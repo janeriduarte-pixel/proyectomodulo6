@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="card shadow border-0 p-4">
+    <h3 class="mb-4 text-primary">Gestión de Proyecto</h3>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+            {{ form.as_p }}
+        </div>
+        <button type="submit" class="btn btn-success">Guardar</button>
+        <a href="{% url 'lista_proyectos' %}" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+{% endblock %}
