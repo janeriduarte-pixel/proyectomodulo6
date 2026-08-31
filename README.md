@@ -37,6 +37,6 @@ Estructura del Proyecto
 Seguridad e Internacionalización
 - Control de Accesos: Todas las vistas privadas heredan de LoginRequiredMixin, esto funciona para cuando un usuario no autenticado intenta acceder a una URL directa, es redirigido automáticamente a /accounts/login/.
 - Aislamiento de Datos: El método get_queryset() en las vistas filtra los registros usando usuario=self.request.user, garantizando que un usuario no pueda consultar o alterar proyectos de otros.
-- Idioma: Configurado en español (LANGUAGE_CODE = 'es') para la traducción automática de validaciones y formularios.
-- Zona horaria (`TIME_ZONE`): Ajustado a `'America/Santiago'`, lo que garantiza que las fechas y horas de creación o modificación de los proyectos y tareas se registren y muestren con precisión según el huso horario local de Chile.
+- Idioma ('LANGUAGE_CODE'): Configurado en español la app, para la traducción automática de validaciones y formularios.
+- Zona horaria (`TIME_ZONE`): cambiado a `'America/Santiago'`, lo que garantiza que las fechas y horas de creación o modificación de los proyectos y tareas se registren y muestren con precisión según el huso horario local de Chile.
 
