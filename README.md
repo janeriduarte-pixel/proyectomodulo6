@@ -8,21 +8,21 @@ Panel de Administración: Configuración personalizada del administrador de Djan
 Interfaz Moderna: Diseño adaptativo utilizando Bootstrap 5 con tarjetas, insignias y botones interactivos.
 
 Para poder acceder a mi proyecto sigue estos pasos ordenados para desplegarlo localmente:
-1. Clonar el repositorio e ingresar al proyecto
+1. Clonar el repositorio e ingresar al proyecto:
 git clone: https://github.com/janeriduarte-pixel/proyectomodulo6.git
 cd proyectomodulo6
-2. Crear y activar el entorno virtual
+2. Crear y activar el entorno virtual:
 python -m venv venv
 venv\Scripts\activate
-3. Instalar las dependencias
+3. Instalar las dependencias:
 pip install django
-4. Aplicar las migraciones a la base de datos
+4. Aplicar las migraciones a la base de datos:
 Ejecuta las migraciones para preparar la base de datos SQLite predeterminada:
 python manage.py migrate
 5. Crear un superusuario para el sitio administrativo
 Para acceder al panel de control de Django en /admin/, crea una cuenta de administrador:
 python manage.py createsuperuser
-6. Iniciar el servidor de desarrollo
+6. Iniciar el servidor de desarrollo:
 python manage.py runserver
 Abre tu navegador e ingresa a http://127.0.0.1:8000/ para comenzar a usar la aplicación.
 
